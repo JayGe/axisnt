@@ -1,0 +1,7 @@
+# Screen startup
+escape ``
+hardstatus alwayslastline
+hardstatus string '%{= kG}%-Lw%{= kW}%50> %n%f* %t%{= kG}%+Lw%<'
+screen -t amp-relay  0 "/home/pi/amp/relay.py"
+screen -t amp-temp 1 "/home/pi/amp/temphumid.py"
+screen -t amp-serial 2 "/home/pi/amp/serialmonama.py"
